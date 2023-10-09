@@ -1,0 +1,7 @@
+На диаграмме показаны классы [User] и [Admin]. У [User] есть атрибуты username и password, которые используются для регистрации и аутентификации. У [Admin] есть атрибут adminId, который идентифицирует администратора.
+
+У класса [User] есть методы signUp(), signIn(), sendMessage(), receiveMessage(), createGroupChat(), joinGroupChat(), leaveGroupChat(), editProfile(), blockUser(), deleteMessage(), searchContacts() и viewConversationHistory(), которые соответствуют вариантам использования (Use Cases) для пользователей мессенджера.
+
+У класса [Admin] есть методы createUserAccount(), deleteUserAccount(), updateUserAccount(), viewUserStatistics(), manageUserAccount(), manageGroupChat(), blockUser(), handleUserReports() и viewReports(), которые соответствуют вариантам использования (Use Cases) для администраторов мессенджера.
+
+Также на диаграмме показаны отношения extend, которые показывают, что некоторые Use Cases администраторов расширяют или являются более специализированными вариантами использования, например, manageUserAccount() расширяет [Admin], handleUserReports() расширяет [Admin] и viewReports() расширяет [Admin]
