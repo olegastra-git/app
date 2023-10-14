@@ -33,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sendMessage(String messageText) {
-        // Отправка сообщения на сервер
-        // В данном примере мы будем считать, что отправка происходит успешно,
-        // поэтому добавим отправленное сообщение в список и обновим адаптер
-        
+        // Отправка сообщения на сервер. В данном примере мы будем считать, что отправка происходит успешно,поэтому добавим отправленное сообщение в список и обновим адаптер
+               
         Message sentMessage = new Message(messageText);
         messageList.add(sentMessage);
         messageAdapter.notifyDataSetChanged();
